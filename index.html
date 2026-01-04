@@ -1,10 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Page</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .math-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .math-section h2 {
+            color: #667eea;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+
+        .formula {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .formula p:last-child {
+            margin-bottom: 0;
+            font-size: 1.1em;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn.secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn.secondary:hover {
+            background: #e0e0e0;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first paragraph on a simple web page.</p>
+    <div class="container">
+        <h1>Welcome to My Page</h1>
+        <p>This is a simple website hosted on GitHub Pages. Feel free to customize it to make it your own!</p>
+        
+        <div class="math-section">
+            <h2>Some Beautiful Calculus</h2>
+            <div class="formula">
+                <p><strong>The Fundamental Theorem of Calculus:</strong></p>
+                <p>\[\int_a^b f(x)\,dx = F(b) - F(a)\]</p>
+            </div>
+            <div class="formula">
+                <p><strong>Derivative of e^x:</strong></p>
+                <p>\[\frac{d}{dx}e^x = e^x\]</p>
+            </div>
+            <div class="formula">
+                <p><strong>Integration by Parts:</strong></p>
+                <p>\[\int u\,dv = uv - \int v\,du\]</p>
+            </div>
+            <div class="formula">
+                <p><strong>Taylor Series:</strong></p>
+                <p>\[f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n\]</p>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/yourusername" class="btn">GitHub Profile</a>
+            <a href="#" class="btn secondary">Projects</a>
+            <a href="#" class="btn secondary">Contact</a>
+        </div>
+
+        <footer>
+            <p>© 2026 Your Name | Hosted on GitHub Pages</p>
+        </footer>
+    </div>
 </body>
 </html>
